@@ -7,7 +7,8 @@ public class heightConverter
 			{
 			double feet = inputFeet();
 			double inches = inputInches();
-			double justInches = convertToInches();
+			double height = totalHeight();
+			double number of feet = convertToInches(total);
 			double centimeters = convertToCentimeters();
 			double meters = convertToMeters();
 			double convertFeet = outputFeet();
@@ -27,9 +28,9 @@ public class heightConverter
 		    System.out.println("Plus how many inches?");
 		    return userInput.nextDouble();
 	        }
-	    public static double convertToInches()
+	    public static double convertToInches(double numberOfFeet)
 		    {
-		    	double inches = justInches * 12;
+		    	double inches = numberOfFeet * 12;
 		    }
 	    public static double convertToCentimeters()
 		    {

@@ -2,17 +2,14 @@ import java.util.Scanner;
 
 public class heightConverter
 	{
-
+		static Scanner userInput;
+		static Scanner userInput1;
+		
 		public static void main(String[] args)
 			{
 			double feet = inputFeet();
-			double inches = inputInches();
-			double height = totalHeight();
-			double number of feet = convertToInches(total);
-			double centimeters = convertToCentimeters();
-			double meters = convertToMeters();
-			double convertFeet = outputFeet();
-			double convertInches = outputInches();
+			double inches = plusInches(feet);
+			
 			}
 				
 	    public static double inputFeet()
@@ -22,30 +19,12 @@ public class heightConverter
 	       	 return userInput.nextDouble();
 	    	}
 	    
-	    public static double inputInches()
+	    public static double plusInches(double feet)
 	        {
-	        Scanner userInput =new Scanner(System.in);
-		    System.out.println("Plus how many inches?");
-		    return userInput.nextDouble();
+	        Scanner userInput1 = new Scanner(System.in);
+	        System.out.println("Plus how many inches?");
+	        return userInput1.nextDouble();
 	        }
-	    public static double convertToInches(double numberOfFeet)
-		    {
-		    	double inches = numberOfFeet * 12;
-		    }
-	    public static double convertToCentimeters()
-		    {
-		    	
-		    }
-	    public static double convertToMeters()
-		    {
-		    	
-		    }
-	    public static double outputFeet()
-		    {
-		    	
-		    }
-	    public static double outputInches()
-		    {
-		    	
-		    }
-}
+	    
+	   
+	}

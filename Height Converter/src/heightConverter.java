@@ -39,7 +39,7 @@ public class heightConverter
 	    }
 	    public static double convertToCentimeters(double numberOfInches)
 	    {
-	    	double inches = numberOfInches * 2.54;
+	    	double centimeters = numberOfInches * 2.54;
 	    	System.out.println("YOur height in centimeters: " + centimeters);
 	    	return centimeters;
 	    }
